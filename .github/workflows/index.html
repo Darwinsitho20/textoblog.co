@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color: black;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-weight: bold;
+            color: white;
+        }
+
+        .menu {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .menu-toggle {
+            cursor: pointer;
+        }
+
+        .bar {
+            width: 30px;
+            height: 3px;
+            background-color: white;
+            margin: 5px 0;
+        }
+
+        .nav {
+            display: none;
+            background-color: black;
+            border: 2px solid red;
+            padding: 10px;
+            position: absolute;
+            top: 40px;
+            right: 0;
+            z-index: 10;
+        }
+
+        .nav a {
+            display: block;
+            color: red;
+            text-decoration: none;
+            padding: 10px 0;
+        }
+
+        .menu-active .nav {
+            display: block;
+        }
+
+        .text-container {
+            position: relative;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .text-container::before,
+        .text-container::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 10px; /* Ancho de las líneas */
+            background: rgba(255, 0, 0, 0.5); /* Color de las líneas con opacidad */
+        }
+
+        .text-container::before {
+            left: 0;
+        }
+
+        .text-container::after {
+            right: 0;
+        }
+
+        .text-container p {
+            text-align: justify; /* Justifica el texto */
+            margin: 0;
+        }
+
+        .image-section {
+            text-align: center; /* Centra la imagen horizontalmente */
+            padding: 20px;
+        }
+
+        .image-section img {
+            display: inline-block; /* Asegura que la imagen esté centrada */
+            max-width: 20%; /* Ajusta el tamaño máximo de la imagen */
+            height: auto;
+            border: 1px solid white; /* Opcional: agregar borde blanco para mejor visualización */
+            box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5); /* Opcional: agregar sombra para destacar la imagen */
+        }
+
+        .text-below-image-container {
+            position: relative;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 800px; /* Ajusta el ancho máximo según sea necesario */
+        }
+
+        .text-below-image-container::before,
+        .text-below-image-container::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 10px; /* Ancho de las líneas */
+            background: rgba(255, 0, 0, 0.5); /* Color de las líneas con opacidad */
+        }
+
+        .text-below-image-container::before {
+            left: 0;
+        }
+
+        .text-below-image-container::after {
+            right: 0;
+        }
+
+        .text-below-image {
+            text-align: justify; /* Justifica el texto */
+            margin: 0;
+        }
+
+        .video-section {
+            text-align: left;
+            padding: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 315px; /* Ajusta la altura del video según sea necesario */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="nav" id="nav-menu">
+                <a href="perfil.html">Perfil</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="trayectoria.html">Trayectoria</a>
+            </nav>
+        </div>
+        <h1>MI SITIO</h1>
+    </header>
+
+    <main>
+        <section class="text-container">
+            <p>Hola, soy Darwin Antonio Ortega González, tengo 25 años y soy Ingeniero Informático. A lo largo de mi carrera, he acumulado una amplia experiencia en el campo de la informática, comenzando como Tecnólogo en Análisis y Desarrollo de Sistemas de Información y avanzando hasta obtener mi título en Ingeniería Informática.
+
+                Mi trayectoria profesional comenzó con mis estudios en Tecnología en Análisis y Desarrollo de Sistemas de Información. Durante esta etapa, desarrollé habilidades fundamentales en el análisis y diseño de sistemas, programación, y administración de bases de datos. Aprendí a implementar soluciones tecnológicas que optimizan procesos empresariales y mejoran la eficiencia operativa. Estos conocimientos iniciales me proporcionaron una sólida base sobre la que construir mi carrera profesional.
+                
+                Después de completar mis estudios como tecnólogo, decidí continuar mi formación en Ingeniería Informática. En esta etapa, profundicé en áreas avanzadas como el desarrollo de software, la ingeniería de sistemas, y la gestión de proyectos tecnológicos. Mi formación incluyó un enfoque en el diseño de arquitecturas de sistemas, la integración de tecnologías emergentes y la implementación de soluciones innovadoras para diversos sectores.
+                
+                Durante mi carrera como Ingeniero Informático, he trabajado en diversos proyectos que abarcan el desarrollo de aplicaciones web y móviles, el diseño y la optimización de bases de datos, y la administración de redes y sistemas. He liderado equipos de desarrollo, gestionado proyectos complejos y colaborado con diferentes departamentos para garantizar que las soluciones tecnológicas cumplan con los requisitos y expectativas de los clientes.
+                
+                Además de mi experiencia técnica, también he adquirido habilidades en la gestión de sistemas integrados y en la aplicación de estándares de calidad para asegurar que los sistemas sean robustos, escalables y seguros. Mi enfoque en la mejora continua y en la implementación de prácticas de gestión de proyectos me ha permitido entregar resultados de alta calidad y cumplir con los objetivos de los proyectos de manera efectiva.
+                
+                A lo largo de mi carrera, he aprendido a abordar problemas complejos con una mentalidad analítica y a encontrar soluciones creativas que mejoren la eficiencia y la efectividad de los sistemas. Mi formación y experiencia me han preparado para enfrentar desafíos en el campo de la informática y contribuir de manera significativa al desarrollo y la gestión de soluciones tecnológicas avanzadas.</p>
+        </section>
+
+        <section class="image-section">
+            <img src="file:///C:/Users/myuli/Downloads/bcd37290-bc00-43b3-9fbe-36a0ea3dba54.webp" alt="Imagen">
+        </section>
+
+        <section class="text-below-image-container">
+            <div class="text-below-image">
+                <p>Mi interés en seguir creciendo profesionalmente me ha llevado a considerar un programa académico acelerado en Ingeniería Industrial. Creo que esta especialización complementará mis habilidades actuales y me permitirá entender mejor la optimización de procesos y la gestión eficiente de recursos en el contexto industrial. La integración de conocimientos de ingeniería industrial con mi experiencia en informática potenciará mi capacidad para diseñar e implementar soluciones tecnológicas que mejoren la eficiencia y la competitividad en diversos sectores.
+
+                Además, tengo una meta clara de alcanzar una especialización en Dirección y Gestión de Proyectos. Esta especialización es crucial para consolidar mis habilidades en la planificación, ejecución y supervisión de proyectos complejos, asegurando que se cumplan los objetivos y se maximicen los recursos disponibles. La capacidad de gestionar proyectos de manera efectiva es esencial para liderar equipos y entregar soluciones tecnológicas que superen las expectativas de los clientes.
+                
+                Mis aspiraciones también incluyen obtener una Maestría en Dirección y Administración de Empresas, así como una Maestría en Sistemas Integrados de Gestión. La primera maestría me permitirá adquirir una comprensión más profunda de las estrategias empresariales, la gestión de recursos y la toma de decisiones a nivel directivo. La segunda maestría ampliará mi conocimiento en la integración de sistemas y la gestión de la calidad, preparándome para implementar soluciones integradas que optimicen la operación y la administración de las organizaciones.
+                
+                Para mí, el aprendizaje es un proceso continuo y fundamental para el crecimiento profesional. En un campo tan dinámico y en constante evolución como la tecnología y la gestión, es esencial mantenerse actualizado con las últimas tendencias y avances. La formación continua no solo me permite adquirir nuevas habilidades y conocimientos, sino también adaptarme a los cambios del mercado y anticipar las necesidades futuras de las empresas. Crecer y aprender constantemente es clave para innovar, liderar con éxito y contribuir de manera significativa al desarrollo de soluciones avanzadas.
+                
+                Mi compromiso con el aprendizaje continuo y la formación especializada es una parte fundamental de mi trayectoria profesional, y estoy entusiasmado por explorar nuevas oportunidades que me permitan seguir desarrollándome y aportando valor en el campo de la tecnología y la gestión.</p>
+            </div>
+        </section>
+
+        <section class="video-section">
+            <iframe src="c:\Users\myuli\Downloads\¿Qué hace un Ingeniero Informático_.mp4" frameborder="0" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.body.classList.toggle('menu-active');
+        });
+    </script>
+</body>
+</html>
