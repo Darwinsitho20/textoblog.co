@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: url('https://img.freepik.com/fotos-premium/retrato-ingeniero-afro-negro-fabrica_564714-22770.jpg') no-repeat center center fixed; /* Cambia la ruta a tu imagen de fondo */
+            background-size: cover;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        .profile-circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid white;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-details {
+            text-align: center;
+            max-width: 600px;
+            border-top: 2px solid rgba(255, 255, 255, 0.5);
+            padding-top: 20px;
+            position: relative;
+            background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el área de texto */
+            padding-bottom: 20px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .profile-details h2 {
+            margin: 0;
+            font-size: 24px;
+            color: white;
+        }
+
+        .profile-details p {
+            margin: 10px 0;
+            color: white;
+            font-size: 18px;
+        }
+
+        .profile-details span {
+            font-weight: bold;
+        }
+
+        .separator {
+            width: 100%;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.5);
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-circle">
+            <img src="c:\Users\myuli\Documents\Mis Proyectos 2024\Perfilproyecto.jpeg" alt="Imagen de perfil"> <!-- Cambia la ruta a tu imagen de perfil -->
+        </div>
+
+        <div class="profile-details">
+            <h2>Perfil</h2>
+            <div class="separator"></div>
+            <p><span>Nombre completo:</span> Darwin Antonio Ortega González</p>
+            <p><span>Edad:</span> 25 años</p>
+            <p><span>Lugar de nacimiento:</span> Buenaventura, Colombia</p>
+            <p><span>Lugar de residencia:</span> Logroño, España</p>
+            <p><span>Estudios Tecnologicos:</span> Tecnología en Análisis y Desarrollo de Sistemas de Información
+            <p><span>Estudios Pregrados:</span> Ingenería Informatica, Ingenería Industrial</p>
+            <p><span>Estudios Posgrados:</span> Dirección y Gestión de Proyectos, Dirección y Administración de Empresas, Sistemas Integrados de Gestión.
+            <p><span>Universidad (es):</span> SENA, UNIR y Universidad de San José.</p>
+            <p><span>Pasatiempos:</span> Leer, Programar, Desarrollo de Software, Practicar Idiomas, Hacer ejercicio, Practicar deportes.
+        </div>
+    </div>
+</body>
+</html>
